@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resizable Div</title>
+    <style>
+        #resizableDiv {
+            width: 200px;
+            height: 150px;
+            background-color: rgb(212, 232, 172);
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            border: 2px solid rgb(30, 30, 42);
+            box-sizing: border-box;
+            resize: both;
+            overflow: auto;
+        }
+        #resizableDiv .resizer {
+            width: 10px;
+            height: 10px;
+            background: rgb(228, 194, 123);
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            cursor: se-resize;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    // Create a new div element
+    const resizableDiv = document.createElement('div');
+    resizableDiv.id = 'resizableDiv';
+
+    // Create a resizer handle
+    const resizer = document.createElement('div');
+    resizer.className = 'resizer';
+    resizableDiv.appendChild(resizer);
+
+    // Append the div to the body
+    document.body.appendChild(resizableDiv);
+
+    // Add mouse event listeners for resizing
+    resizer.addEventListener('mousedown', initResize);
+
+    function initResize(e) {
+        window.addEventListener('mousemove', resize);
+        window.addEventListener('mouseup', stopResize);
+    }
+
+    function resize(e) {
+        resizableDiv.style.width = e.clientX - resizableDiv.offsetLeft + 'px';
+        resizableDiv.style.height = e.clientY - resizableDiv.offsetTop + 'px';
+    }
+
+    function stopResize() {
+        window.removeEventListener('mousemove', resize);
+        window.removeEventListener('mouseup', stopResize);
+    }
+});
+
+    </script>
+</body>
+</html>

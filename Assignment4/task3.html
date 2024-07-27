@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Paragraph Visibility</title>
+    <style>
+        #useless-paragraph {
+            transition: opacity 0.5s ease;
+        }
+        .hidden {
+            display: none;
+        }
+        h1{
+            text-align: center;
+            padding: 5px;
+            background: pink;
+        }
+
+        p{
+            padding: 10px;
+            background: skyblue;
+            text-align: center;
+        }
+
+    button{
+        text-align: center;
+        padding: 10px;
+    }
+
+    div{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    </style>
+</head>
+<body>
+    <h1>Click the button to hide the paragraph</h1>
+    <br />
+    <p id="hidden-para" >Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <br />
+    <div>
+        <button onclick="toggleVisibility()">Toggle Button</button>
+    </div>
+
+
+    <script>
+        function toggleVisibility() {
+            const paragraph = document.getElementById('hidden-para');
+            if (paragraph.classList.contains('hidden')) {
+                paragraph.classList.remove('hidden');
+            } else {
+                paragraph.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>

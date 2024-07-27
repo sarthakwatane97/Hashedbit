@@ -1,0 +1,76 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e2e2e2, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.points-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+.points-table th, .points-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.points-table th {
+  background-color: #df8de0;
+  color: white;
+  font-weight: bold;
+}
+
+.points-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.points-table tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.points-table td {
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .points-table {
+    font-size: 14px;
+  }
+}
+
+.points-table td {
+  color: black; 
+}
+
+.container {
+  border: 2px solid #ddd;
+  padding: 16px;
+  width: 900px;
+  height: 619px;
+  resize: both; /* Allows both horizontal and vertical resizing */
+  overflow: auto; /* Adds scrollbars if the content overflows */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
+}

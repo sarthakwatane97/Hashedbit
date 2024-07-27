@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme changer</title>
+</head>
+<body id="Theme">
+    <div>
+        <h1>Click below button to change the Theme</h1>
+        <button>Toggle Theme</button>
+    </div>
+</body>
+<script>
+    let theme=document.getElementById("Theme")
+    let button=document.getElementsByTagName("button")[0]
+    let Toggle = false
+
+button.addEventListener("click",()=>{
+    if(Toggle){
+        
+    theme.style.backgroundColor = "red"
+    Toggle = !Toggle
+    }else{
+         theme.style.backgroundColor = "blue"
+        Toggle= !Toggle
+    }
+})
+
+</script>
+</html>

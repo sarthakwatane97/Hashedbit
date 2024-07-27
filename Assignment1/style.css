@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#912b5a ;
+    color: white;
+    padding:10px 30px;
+    height: 50px;
+}
+
+header .logo {
+    height:80px;
+    width: 200px;
+    margin-top: 0;
+}
+
+header .social-links a {
+    color: white;
+    margin-left: 100px;
+    text-decoration: none;
+}
+
+nav {
+    background-color: #1c112e;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.container {
+    display: flex;
+}
+
+aside {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 250px;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+#content-box1 {
+    background-color: #c2f3ee;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#content-box2 {
+    background-color: #eea0b3;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#content-box3 {
+    background-color: #a0f6ed;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.content-box h3 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    position: relative;
+    height: 30px;
+    width: 100%;
+}
+.container .sidebox{
+    background-color: rgb(191, 243, 243);
+    height: 400px;
+    width: 230px;
+    display: inline-table;
+    justify-content: center;
+}
+
+.container .sidebox ul li{
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+.container .sidebox ul li a{
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    box-sizing: border-box;
+    box-shadow: #1c112e;
+    padding-top: 20px;
+}

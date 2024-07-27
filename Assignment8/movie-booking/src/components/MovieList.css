@@ -1,0 +1,21 @@
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: #2b3149;
+    padding: 10px;
+    align-items: center;
+    /* margin: 0 !important; */
+    justify-content: center;
+    /* width: 100% !important; */
+    margin: 0;
+  }
+  
+  .movie-item {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  

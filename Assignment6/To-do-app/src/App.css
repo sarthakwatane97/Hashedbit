@@ -1,0 +1,26 @@
+.App {
+    text-align: center;
+  }
+  
+  input {
+    margin: 10px;
+  }
+  
+  button {
+    margin-left: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100vw;
+
+  }
+  
+  li {
+    display: flex;
+    margin: 10px 0;
+    justify-content: center;
+
+  }
+  
